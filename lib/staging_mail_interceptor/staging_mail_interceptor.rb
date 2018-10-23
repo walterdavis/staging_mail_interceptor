@@ -27,6 +27,7 @@ module StagingMailInterceptor
 
     def self.intended_addresses(message)
       <<-eof
+        
         ----------------
         Intended sender: #{message.from}
         Intended recipient(s): #{message.to}

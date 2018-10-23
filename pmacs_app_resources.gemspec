@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 Gem::Specification.new do |s|
   s.name        = 'staging_mail_interceptor'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2018-10-23'
   s.summary     = 'Staging Mail Interceptor'
   s.description = 'Includes a mail interceptor.'
