@@ -1,0 +1,13 @@
+before_script:
+  - bundle install --path="vendor/bundle"
+
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - bundle exec rspec spec
+  cache:
+    paths:
+    - vendor/bundle/
