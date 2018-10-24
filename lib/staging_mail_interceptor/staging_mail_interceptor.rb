@@ -37,8 +37,8 @@ module StagingMailInterceptor
     end
 
     def self.override_recipients(message)
-      message.from = Rails.configuration.staging_mail_interceptor.override_from_address
-      message.to = Rails.configuration.staging_mail_interceptor.override_to_address
+      message.from = Rails.configuration.x.staging_mail_interceptor.override_from_address
+      message.to = Rails.configuration.x.staging_mail_interceptor.override_to_address
       message.cc = nil
       message.bcc = nil
     end
