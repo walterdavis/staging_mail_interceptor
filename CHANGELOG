@@ -2,3 +2,4 @@ v 0.0.1 Chop down from PMACS App Resources gem
 v 0.0.2 Update configuration and README
 v 0.0.3 Use the x namespace for configuration
 v 0.0.4 DON'T use the x namespace for configuration
+v 0.0.5 Remove un-used mailer
