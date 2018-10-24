@@ -22,8 +22,8 @@ RSpec.shared_examples 'an intercepted email' do
   let(:intended_bcc_footer) { "Intended bcc(s): #{intended_bcc}" }
 
   before(:each) do
-    Rails.configuration.x.staging_mail_interceptor.override_from_address = redirected_from
-    Rails.configuration.x.staging_mail_interceptor.override_to_address = redirected_to
+    Rails.configuration.staging_mail_interceptor.override_from_address = redirected_from
+    Rails.configuration.staging_mail_interceptor.override_to_address = redirected_to
 
     StagingMailInterceptor::MailInterceptor.delivering_email(email)
   end
